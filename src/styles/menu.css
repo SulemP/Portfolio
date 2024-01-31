@@ -1,0 +1,54 @@
+.menu {
+    position: fixed;
+    width: 95%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.sulem {
+    margin: 0;
+    color: white;
+    font-size: 1.5rem;
+    margin-left: 2%;
+}
+
+.sulem::before {
+    content: "<";
+    margin-right: 5px;
+    color: var(--purple);
+}
+
+.sulem::after {
+    content: ">";
+    margin-left: 5px;
+    color: var(--purple);
+}
+
+.menu-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-list li {
+    display: inline;
+}
+
+.menu-list li:not(:last-child) {
+    margin-right: 20px; /* Aplicar margen solo a los elementos que no sean el último */
+}
+
+.menu-list li a {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-list li a::before {
+    content: "#";
+    margin-right: 5px;
+    color: var(--purple);
+}

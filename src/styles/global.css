@@ -1,0 +1,13 @@
+:root{
+    --dark: #282c34; 
+    --purple: #C778DD;
+    --gray: #ABB2BF;
+}
+
+.highlight-text{
+    color: var(--purple);
+}
+
+button{
+    transition: transform 0.5s ease;
+}

@@ -1,0 +1,60 @@
+/* Introduccion.css */
+
+.introduccion {
+    display: flex;
+    padding: 3%;
+}
+  
+.introduccion-columna {
+    width: 48%; /* Ancho de cada columna (ajústalo según sea necesario) */
+    padding: 20px;
+}
+
+.introduccion-columna h1{
+    color: white;
+}
+
+.introduccion-columna p{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    color: var(--gray);
+}
+
+.introduccion button{
+    margin-top: 2rem;
+    height: 50px;
+    width: 20%;
+    border: 1px solid var(--purple); 
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.logo{
+    position: absolute;
+    z-index: -1;
+    width: 10%;
+    height: 20%;
+    top: 10rem;
+    right: 5%;
+}
+
+.imgSulem{
+    margin-top: -10%;
+    width: 50%; 
+    height: 60%;
+    margin-left: 40%;
+    transition: transform 0.5s ease;
+}
+
+.imgSulem:hover {
+    transform: scale(1.1); /* Escala la imagen al 110% del tamaño original */
+}
+
+.dots{
+    position: absolute;
+    z-index: -1;
+    right: 25%;
+    top: 23rem;
+}

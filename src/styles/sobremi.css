@@ -1,0 +1,83 @@
+.sobremi-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.sobremi-container h3::before{
+    content: '#';
+    color: var(--purple);
+    margin-right: 5px;
+}
+
+.subtitulo {
+    display: flex;
+    flex-direction: row; /* Para que los elementos estén uno encima del otro */
+    align-items: center;
+}
+  
+.subtitulo > div {
+    flex: 1; /* Para que cada div ocupe el mismo espacio en la columna */
+    margin-bottom: 20px; /* Ajusta el margen entre los elementos según sea necesario */
+}
+  
+.subtitulo img {
+    width: 20%;
+    height: 2px;
+    margin-left: 20px;
+    
+}
+  
+.sobremi-column {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.sobremi-left {
+    flex: 1;
+    margin-right: 20px; /* Ajusta el margen entre las columnas según sea necesario */
+}
+  
+.sobremi-right {
+    flex: 2;
+    color: var(--gray);
+    text-align: justify;
+}
+
+.experiencia {
+    display: flex;
+    flex-direction: row; /* Para que los elementos estén uno encima del otro */
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.experiencia > div {
+    flex: 1; /* Para que cada div ocupe el mismo espacio en la columna */
+    margin-bottom: 20px; /* Ajusta el margen entre los elementos según sea necesario */
+}
+  
+.experiencia img {
+    width: 20%;
+    height: 2px;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.button button{
+    height: 50px;
+    border: 1px solid var(--purple); 
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 15px;
+}
+
+button:hover {
+    transform: scale(1.1); /* Escala la imagen al 110% del tamaño original */
+}
+  
