@@ -1,0 +1,24 @@
+#extras{
+    margin-top: 2rem;
+}
+
+.extras{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--gray);
+    text-align: justify;
+}
+  
+.subtitulo img {
+    width: 20%;
+    height: 2px;
+    margin-left: 20px;
+    
+}
+
+.gracias{
+    color: var(--purple);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}

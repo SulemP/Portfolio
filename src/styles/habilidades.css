@@ -1,25 +1,43 @@
 .habilidades{
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
-}
-.subtitulo {
-    display: flex;
-    flex-direction: row; /* Para que los elementos estén uno encima del otro */
-    align-items: center;
-    flex: 1; /* Para que cada div ocupe el mismo espacio en la columna */
-    margin-bottom: 20px; 
-}
-
-.subtitulo h3::before{
-    content: '#';
-    color: var(--purple);
-    margin-right: 5px;
+    height: 500px;
+    display: grid;
 }
   
 .subtitulo img {
     width: 20%;
     height: 2px;
     margin-left: 20px;   
+}
+
+.dots{
+    position: absolute;
+    top: 10rem;
+    left: 12%;
+}
+
+.rectangle{
+    position: absolute;
+    top: 23.5rem;
+    left: 32%;
+    width: 5%;
+}
+
+.logo{
+    position: absolute;
+    top: 10rem;
+    right: 30%;
+    width: 15%;
+    height: 40%;
+}
+
+.dots2{
+    position: absolute;
+    top: 17rem;
+    right: 5%;
+    width: 5%;
 }
 
 .habilidades-list{

@@ -5,6 +5,9 @@ import Introduccion from './components/Introduccion';
 import SobreMi from './components/SobreMi';
 import Proyectos from './components/Proyectos';
 import Habilidades from './components/Habilidades';
+import Extras from './components/Extras';
+import Contacto from './components/Contacto';
+import Tecnologias from './components/Tecnologias';
 
 function App() {
   return (
@@ -13,8 +16,11 @@ function App() {
         <Menu/>
         <Introduccion/>
         <SobreMi/>
+        <Tecnologias/>
         <Proyectos/>
         <Habilidades/>
+        <Extras/>
+        <Contacto/>
       </div>
     </>
   );

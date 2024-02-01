@@ -1,8 +1,7 @@
-/* Introduccion.css */
-
 .introduccion {
     display: flex;
     padding: 3%;
+    margin-top: 1rem;
 }
   
 .introduccion-columna {
@@ -31,7 +30,7 @@
     font-size: 1.1rem;
 }
 
-.logo{
+.logoIntro{
     position: absolute;
     z-index: -1;
     width: 10%;
@@ -52,7 +51,7 @@
     transform: scale(1.1); /* Escala la imagen al 110% del tamaño original */
 }
 
-.dots{
+.dotsIntro{
     position: absolute;
     z-index: -1;
     right: 25%;

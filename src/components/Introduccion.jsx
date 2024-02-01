@@ -9,7 +9,7 @@ export default function Introduccion() {
   const desarrollo = "desarrollo front-end";
 
   return (
-    <div className="introduccion">
+    <div id="inicio" className="introduccion">
       <div className="introduccion-columna">
         <h1>
           Soy <span className="highlight-text">{sulemText}</span> y me
@@ -22,9 +22,9 @@ export default function Introduccion() {
 
       <div className="introduccion-columna">
         <center>
-            <img className="logo" src={Logo}></img>
+            <img className="logoIntro" src={Logo}></img>
             <img className="imgSulem" src={Sulem}></img>
-            <img className="dots" src={Dots}></img>
+            <img className="dotsIntro" src={Dots}></img>
         </center>
       </div>
     </div>

@@ -1,0 +1,42 @@
+.tecnologias{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.tecnologias-columns {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.column-left {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+.column-right {
+    flex: 1;
+    display: flex; /* Utiliza flexbox para organizar las tablas en columnas */
+    flex-wrap: wrap; /* Envuelve las tablas si no caben en el ancho disponible */
+}
+  
+.column-right > div {
+    width: calc(25% - 5px); /* Ancho del 25% para que haya 4 columnas con espacio entre ellas */
+    margin-bottom: 20px; /* Espacio entre las tablas */
+}
+
+.column-right table{
+    width: 100%;
+}
+  
+.tablaLenguajes, .tablaFrame, .tablaOtros, .tablaHerramientas {
+    border-collapse: collapse; /* Combina los bordes de la tabla */
+    border: 1px solid var(--gray);
+}
+
+.tablaLenguajes tr:not(:last-child) td,
+.tablaFrame tr:not(:last-child) td,
+.tablaOtros tr:not(:last-child) td,
+.tablaHerramientas tr:not(:last-child) td{
+    border-bottom: 1px solid var(--gray); /* Agrega un borde inferior a todas las celdas, excepto a las de la última fila */
+}

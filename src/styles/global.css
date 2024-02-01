@@ -6,8 +6,23 @@
 
 .highlight-text{
     color: var(--purple);
+    transition: transform 0.5s ease;
 }
 
 button{
     transition: transform 0.5s ease;
+}
+
+.subtitulo {
+    display: flex;
+    flex-direction: row; /* Para que los elementos estén uno encima del otro */
+    align-items: center;
+    flex: 1; /* Para que cada div ocupe el mismo espacio en la columna */
+    margin-bottom: 20px; 
+}
+
+.subtitulo h3::before{
+    content: '#';
+    color: var(--purple);
+    margin-right: 5px;
 }

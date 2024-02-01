@@ -11,7 +11,7 @@ export default function SobreMi() {
     }
 
     return (
-        <div className="sobremi-container">
+        <div id="acerca-de" className="sobremi-container">
             <div className="subtitulo">
                 <h3 style={{ color: 'white' }}>Acerca de mí</h3>
                 <img src={Line}></img>

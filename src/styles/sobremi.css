@@ -9,17 +9,6 @@
     margin-right: 5px;
 }
 
-.subtitulo {
-    display: flex;
-    flex-direction: row; /* Para que los elementos estén uno encima del otro */
-    align-items: center;
-}
-  
-.subtitulo > div {
-    flex: 1; /* Para que cada div ocupe el mismo espacio en la columna */
-    margin-bottom: 20px; /* Ajusta el margen entre los elementos según sea necesario */
-}
-  
 .subtitulo img {
     width: 20%;
     height: 2px;

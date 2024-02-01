@@ -1,0 +1,5 @@
+.clase{
+    display: grid;
+    place-content: center;
+    height: 100hv;
+} /* Esto hace que el elemento se centre en toda la página*/

@@ -1,12 +1,14 @@
 .menu {
     position: fixed;
-    width: 95%;
+    width: 100%;
     top: 0;
     left: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    z-index: 10;
+    color: white;
 }
 
 .sulem {
@@ -14,6 +16,7 @@
     color: white;
     font-size: 1.5rem;
     margin-left: 2%;
+    font-weight: bold;
 }
 
 .sulem::before {
@@ -28,27 +31,36 @@
     color: var(--purple);
 }
 
-.menu-list {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.menu.scrolled {
+    width: 100%;
+    background-color: var(--gray);
+    color: var(--dark);
+}  
+
+.sulem.dark {
+    color: var(--dark);
 }
 
-.menu-list li {
-    display: inline;
+.color.dark button{
+    color: var(--dark);
 }
 
-.menu-list li:not(:last-child) {
-    margin-right: 20px; /* Aplicar margen solo a los elementos que no sean el último */
+.menu-list{
+    margin-right: 4%;
 }
 
-.menu-list li a {
+.menu-list button{
+    border: none;
+    background-color: transparent;
+    transition: transform 0s ease;
     color: white;
-    text-decoration: none;
+    font-weight: bold;
 }
 
-.menu-list li a::before {
-    content: "#";
+.menu-list button::before{
+    content: '#';
     margin-right: 5px;
     color: var(--purple);
+    font-size: 1.1rem;
 }
+  
