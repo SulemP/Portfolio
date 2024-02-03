@@ -1,9 +1,9 @@
-.sobremi-container {
+.sobremiContainer {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.sobremi-container h3::before{
+.sobremiContainer h3::before{
     content: '#';
     color: var(--purple);
     margin-right: 5px;
@@ -16,17 +16,17 @@
     
 }
   
-.sobremi-column {
+.sobremiColumn {
     display: flex;
     justify-content: space-between;
 }
   
-.sobremi-left {
+.sobremiLeft {
     flex: 1;
     margin-right: 20px; /* Ajusta el margen entre las columnas según sea necesario */
 }
   
-.sobremi-right {
+.sobremiRight {
     flex: 2;
     color: var(--gray);
     text-align: justify;
@@ -69,4 +69,26 @@
 button:hover {
     transform: scale(1.1); /* Escala la imagen al 110% del tamaño original */
 }
-  
+
+
+
+/* ************* GENERAL ************* */
+
+.highlightText{
+    color: var(--purple);
+    transition: transform 0.5s ease;
+}
+
+.subtitulo {
+    display: flex;
+    flex-direction: row; /* Para que los elementos estén uno encima del otro */
+    align-items: center;
+    flex: 1; /* Para que cada div ocupe el mismo espacio en la columna */
+    margin-bottom: 20px; 
+}
+
+.subtitulo h3::before{
+    content: '#';
+    color: var(--purple);
+    margin-right: 5px;
+}

@@ -1,5 +1,5 @@
-import './App.css';
-import './styles/global.css';
+// import './App.css';
+import Style from './styles/global.module.css';
 import Menu from './components/Menu';
 import Introduccion from './components/Introduccion';
 import SobreMi from './components/SobreMi';
@@ -12,7 +12,7 @@ import Tecnologias from './components/Tecnologias';
 function App() {
   return (
     <>
-      <div className='app-container'>
+      <div className={Style.appContainer}>
         <Menu/>
         <Introduccion/>
         <SobreMi/>

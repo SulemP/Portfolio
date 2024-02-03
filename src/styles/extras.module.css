@@ -1,0 +1,40 @@
+#extras{
+    margin-top: 2rem;
+}
+
+.extras{
+    max-width: 1200px;
+    margin: 0 auto;
+    color: var(--gray);
+    text-align: justify;
+}
+  
+.subtitulo img {
+    width: 20%;
+    height: 2px;
+    margin-left: 20px;
+    
+}
+
+.gracias{
+    color: var(--purple);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ************* GENERAL ************* */
+
+.subtitulo {
+    display: flex;
+    flex-direction: row; /* Para que los elementos estén uno encima del otro */
+    align-items: center;
+    flex: 1; /* Para que cada div ocupe el mismo espacio en la columna */
+    margin-bottom: 20px; 
+}
+
+.subtitulo h3::before{
+    content: '#';
+    color: var(--purple);
+    margin-right: 5px;
+}

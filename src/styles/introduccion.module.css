@@ -3,17 +3,22 @@
     padding: 3%;
     margin-top: 1rem;
 }
+
+#inicio:hover .highlight-text {
+    transition: transform 0.5s ease;
+    transform: scale(1.1);
+}  
   
-.introduccion-columna {
+.introduccionColumna {
     width: 48%; /* Ancho de cada columna (ajústalo según sea necesario) */
     padding: 20px;
 }
 
-.introduccion-columna h1{
+.introduccionColumna h1{
     color: white;
 }
 
-.introduccion-columna p{
+.introduccionColumna p{
     margin-top: 1rem;
     font-size: 1.2rem;
     color: var(--gray);
@@ -56,4 +61,27 @@
     z-index: -1;
     right: 25%;
     top: 23rem;
+}
+
+/* GENERAL */
+
+.highlightText{
+    color: var(--purple);
+    transition: transform 0.5s ease;
+}
+
+/* ************* GENERAL ************* */
+
+.subtitulo {
+    display: flex;
+    flex-direction: row; /* Para que los elementos estén uno encima del otro */
+    align-items: center;
+    flex: 1; /* Para que cada div ocupe el mismo espacio en la columna */
+    margin-bottom: 20px; 
+}
+
+.subtitulo h3::before{
+    content: '#';
+    color: var(--purple);
+    margin-right: 5px;
 }

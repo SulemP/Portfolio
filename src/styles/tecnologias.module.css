@@ -1,0 +1,128 @@
+.tecnologias{
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.tecnologiasColumns {
+    display: flex;
+    justify-content: space-between;
+} 
+
+.columnLeft {
+    flex: 1;
+    margin-right: 20px; 
+}
+
+.cssImg{
+    position: absolute;
+    width: 6%;
+    height: 15%;
+    left: 65%;
+    top: 65%;
+}
+
+.git{
+    position: absolute;
+    width: 10%;
+    height: 25%;
+    top: 70%;
+}
+
+.branch{
+    position: absolute;
+    width: 4%;
+    height: 12%;
+    left: 20%;
+    top: 70%;
+}
+
+.JS{
+    position: absolute;
+    width: 6%;
+    height: 15%;
+    left: 10%;
+    top: 30%;
+}
+
+.code{
+    position: absolute;
+    width: 5%;
+    height: 12%;
+    right: 15%;
+    top: 82%;
+}
+
+.react{
+    position: absolute;
+    width: 20%;
+    height: 50%;
+    left: 30%;
+    top: 40%;
+}
+
+.dots{
+    position: absolute;
+    width: 8%;
+    height: 20%;
+    left: 25%;
+    top: 15%;
+}
+
+.dots2{
+    position: absolute;
+    width: 5%;
+    height: 15%;
+    left: 55%;
+    top: 75%;
+}
+
+.columnRight {
+    flex: 1;
+    display: flex; /* Utiliza flexbox para organizar las tablas en columnas */
+    flex-wrap: wrap; /* Envuelve las tablas si no caben en el ancho disponible */
+}
+  
+.columnRight > div {
+    width: calc(25% - 5px); /* Ancho del 25% para que haya 4 columnas con espacio entre ellas */
+    margin-bottom: 20px; /* Espacio entre las tablas */
+}
+
+.columnRight table{
+    width: 100%;
+}
+
+.columnRight p{
+    color: var(--gray);
+    text-align: center;
+}
+  
+.tablaLenguajes, .tablaFrame, .tablaOtros, .tablaHerramientas {
+    border-collapse: collapse; /* Combina los bordes de la tabla */
+    border: 1px solid var(--purple);
+}
+
+.tablaLenguajes tr:not(:last-child) td,
+.tablaFrame tr:not(:last-child) td,
+.tablaOtros tr:not(:last-child) td,
+.tablaHerramientas tr:not(:last-child) td{
+    border-bottom: 1px solid var(--purple); /* Agrega un borde inferior a todas las celdas, excepto a las de la última fila */
+}
+
+
+/* ************* GENERAL ************* */
+
+.subtitulo {
+    display: flex;
+    flex-direction: row; /* Para que los elementos estén uno encima del otro */
+    align-items: center;
+    flex: 1; /* Para que cada div ocupe el mismo espacio en la columna */
+    margin-bottom: 20px; 
+}
+
+.subtitulo h3::before{
+    content: '#';
+    color: var(--purple);
+    margin-right: 5px;
+}

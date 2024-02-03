@@ -1,17 +1,16 @@
-:root{
-    --dark: #282c34; 
-    --purple: #C778DD;
-    --gray: #ABB2BF;
+.proyectos{
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-.highlight-text{
-    color: var(--purple);
-    transition: transform 0.5s ease;
+.subtitulo img {
+    width: 20%;
+    height: 2px;
+    margin-left: 20px;
+    
 }
 
-button{
-    transition: transform 0.5s ease;
-}
+/* ************* GENERAL ************* */
 
 .subtitulo {
     display: flex;

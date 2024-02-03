@@ -1,12 +1,12 @@
 import React from "react";
 import Line from './../images/Line 7 (Stroke).png'
-import './../styles/extras.css'
+import Style from './../styles/extras.module.css'
 
 export default function Extras () {
     return (
-        <div id="extras" className="extras">
+        <div id="extras" className={Style.extras}>
 
-            <div className="subtitulo">
+            <div className={Style.subtitulo}>
                 <h3 style={{ color: 'white' }}>Extras</h3>
                 <img src={Line}></img>
             </div>
@@ -27,7 +27,7 @@ export default function Extras () {
             </div>
             <br></br>
 
-            <p className="gracias">¡Gracias por visitar mi página y conocer un poco más sobre mí!</p>
+            <p className={Style.gracias}>¡Gracias por visitar mi página y conocer un poco más sobre mí!</p>
 
         </div>
 

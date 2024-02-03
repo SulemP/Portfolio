@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./../styles/menu.css";
+import Style from "./../styles/menu.module.css";
 
 export default function Menu() {
   const [scrolled, setScrolled] = useState(false);
@@ -28,13 +28,13 @@ export default function Menu() {
 
   return (
     <>
-      <header className={`menu ${scrolled ? "scrolled" : ""}`}>
+      <header className={`${Style.menu} ${scrolled ? Style.scrolled : ""}`}>
 
-        <p className={`sulem ${scrolled ? "dark" : ""}`}>Sulem</p>
+        <p className={`${Style.sulem} ${scrolled ? Style.dark : ""}`}>Sulem</p>
 
-        <nav className="menu-list">
+        <nav className={Style.menuList}>
 
-          <ul className={`color ${scrolled ? "dark" : ""}`}>
+          <ul className={`${Style.color} ${scrolled ? Style.dark : ""}`}>
             <button onClick={() => scrollToSection("inicio")}>Inicio</button>
             <button onClick={() => scrollToSection("acerca-de")}>Acerca de mí</button>
             <button onClick={() => scrollToSection("tecnologias")}>Tecnologías</button>

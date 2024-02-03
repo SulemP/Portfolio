@@ -45,11 +45,11 @@
     color: var(--dark);
 }
 
-.menu-list{
+.menuList{
     margin-right: 4%;
 }
 
-.menu-list button{
+.menuList button{
     border: none;
     background-color: transparent;
     transition: transform 0s ease;
@@ -57,7 +57,7 @@
     font-weight: bold;
 }
 
-.menu-list button::before{
+.menuList button::before{
     content: '#';
     margin-right: 5px;
     color: var(--purple);
