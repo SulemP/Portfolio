@@ -1,13 +1,18 @@
-import React, {useState} from "react";
+import React, { useState, useRef } from "react";
 import Style from "./../styles/sobremi.module.css";
 import Line from './../images/Line 7 (Stroke).png'
+import IPN from './../images/ipn.png'
 
 export default function SobreMi() {
 
     const [more, setMore] = useState(false)
+    const tecnologiasRef = useRef(null) //useRef es un hook que me ayuda a crear una referencia(apodo,nombre) con la propiedad .current. Es como si creara una id para reconocer un elemento y poder modificarlo directamente con el DOM
 
-    const showMore = () => {
-        setMore(!more)
+    const showMore = (props) => {
+        setMore(!more) 
+        if(!more && tecnologiasRef.current){
+            tecnologiasRef.current.scrollIntoView({behavior: 'smooth'}) // .scrollIntoView es un método de JavaScript que se utiliza para hacer que un elemento del DOM sea visible dentro del contenedor que lo contiene
+        }
     }
 
     return (
@@ -20,6 +25,18 @@ export default function SobreMi() {
             <div className={Style.sobremiColumn}>
 
                 <div className={Style.sobremiLeft}>
+                    <img className="ipn" src={IPN}></img>
+
+                    {
+                        more && (
+                            <div> 
+                                {/* <div>
+                                    <h4 className={Style.highlightText}>INEIN Infraestructura e Interiores:</h4>
+                                    <p style={{ color: 'white' }}>Agosto 2022 - Octubre 2023</p>
+                                </div> */}
+                            </div>
+                        )
+                    }
                 </div>
 
                 <div className={Style.sobremiRight}>
@@ -85,12 +102,14 @@ export default function SobreMi() {
 
                     <div className={Style.button}>
                         <button onClick={showMore}>
-                            { more ? "Ver Menos": "Experiencia Profesional"}
+                            { 
+                            more ? "Ver Menos": "Experiencia Profesional"}
                         </button>
                     </div>
                     
 
                 </div>
+                
             </div>
         </div>
   );

@@ -27,7 +27,7 @@
 .introduccion button{
     margin-top: 2rem;
     height: 50px;
-    width: 20%;
+    width: 100%;
     border: 1px solid var(--purple); 
     background-color: transparent;
     color: white;

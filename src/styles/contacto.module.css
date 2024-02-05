@@ -1,8 +1,79 @@
+a{
+    text-decoration: none;
+    color: var(--purple);
+}
+
+a:active {
+    color: inherit; /* Mantiene el color heredado cuando el enlace está activo */
+}
+
 .contacto{
     max-width: 1200px;
     margin: 0 auto;
 }
 
+.columns{
+    position: relative;
+    display: flex;
+}
+
+.left{
+    flex:2;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.rectangulo{
+    width: 60%;
+    padding: 5%;
+    text-align: justify;
+    color: white;
+    border: 1px solid var(--purple);
+}
+
+.right{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    /* text-align: center; */
+    justify-content: space;
+}
+
+.redes{
+    display: flex;
+    flex: 1;
+}
+
+.redes div{
+    flex: 1;
+    text-align: center;
+}
+
+.redes img{
+    width: 30px;
+    height: 30px;
+}
+
+.redes div img {
+    opacity: 0.3; 
+}
+
+.redes div:hover img {
+    opacity: 1; 
+}
+
+.redes a{
+    flex: 1;
+    text-align: center;
+}
+
+.redes a img {
+    opacity: 0.3; 
+}
+
+.redes a:hover img {
+    opacity: 1; 
+}
 /* ************* GENERAL ************* */
 
 .subtitulo {
@@ -17,4 +88,10 @@
     content: '#';
     color: var(--purple);
     margin-right: 5px;
+}
+
+.subtitulo img {
+    width: 20%;
+    height: 2px;
+    margin-left: 20px;   
 }

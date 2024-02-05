@@ -16,8 +16,11 @@ export default function Introduccion() {
           especializo en dar vida a diseños web a través del{" "}
           <span className={Style.highlightText}>{desarrollo}</span>
         </h1>
+
         <p>Apasionada por descubrir nuevas tecnologías y técnicas</p>
-        <button>Contáctame</button>
+        <a href="https://wa.me/525548971683?text=¡Hola%2C%20Sulem!%20¿Cómo%20estás%3F" target="_blank">
+          <button>Contáctame</button>
+        </a>
       </div>
 
       <div className={Style.introduccionColumna}>

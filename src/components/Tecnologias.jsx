@@ -10,6 +10,7 @@ import Code from './../images/tecnologias/code.png'
 import ReactLogo from './../images/tecnologias/react.png'
 import Dots from './../images/Dots.png'
 
+import SobreMi from "./SobreMi";
 
 export default function Tecnologias () {
     return (
@@ -111,7 +112,6 @@ export default function Tecnologias () {
                     </div>
 
                 </div>
-
             </div>
         </>
     )

@@ -126,3 +126,9 @@
     color: var(--purple);
     margin-right: 5px;
 }
+
+.subtitulo img {
+    width: 20%;
+    height: 2px;
+    margin-left: 20px;   
+}
