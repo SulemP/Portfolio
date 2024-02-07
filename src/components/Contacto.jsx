@@ -30,7 +30,7 @@ export default function Contacto () {
                             <p>
                                 Estoy entusiasmada por expandir mis conocimientos y crecer profesionalmente en el campo del desarrollo web. 
                                 <br></br><br></br>
-                                En busca de oportunidades para formar parte de una empresa dinámica y orientada al crecimiento, donde pueda aplicar mis habilidades y aprender de un equipo experimentado.
+                                Estoy en busca de oportunidades para formar parte de una empresa dinámica y orientada al crecimiento, donde pueda aplicar mis habilidades y aprender de un equipo experimentado.
                             </p>
                         </div>
                         

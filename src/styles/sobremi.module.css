@@ -16,7 +16,7 @@
     
 }
   
-.sobremiColumn {
+.sobremi {
     display: flex;
     justify-content: space-between;
 }
@@ -26,7 +26,8 @@
     margin-right: 20px; /* Ajusta el margen entre las columnas según sea necesario */
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    object-fit: cover;
+    /* align-items: flex-start; */
 }
 
 .ipn{
@@ -39,6 +40,31 @@
     flex: 2;
     color: var(--gray);
     text-align: justify;
+}
+
+.miExperiencia{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.experienciaLeft{
+    flex: 1;
+    margin-right: 20px; /* Ajusta el margen entre las columnas según sea necesario */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 5rem;
+    color: var(--gray);
+    font-size: .8rem;
+}
+
+.experienciaLeft h4{
+    color: white;
+}
+
+.experienciaLeft span{
+    color: var(--purple);
 }
 
 .experiencia {
@@ -63,6 +89,7 @@
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 .button button{
