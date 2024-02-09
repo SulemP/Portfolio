@@ -1,4 +1,5 @@
 .introduccion {
+    /* position: relative; */
     display: flex;
     padding: 3%;
     margin-top: 1rem;
@@ -22,6 +23,12 @@
     margin-top: 1rem;
     font-size: 1.2rem;
     color: var(--gray);
+}
+
+.platzi{
+    position: absolute;
+    top:70%;
+    left: 65%
 }
 
 .introduccion button{

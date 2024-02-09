@@ -1,6 +1,7 @@
 .proyectos{
     max-width: 1200px;
     margin: 0 auto;
+    margin-bottom: 2rem;
 }
 
 .subtitulo img {
@@ -8,6 +9,55 @@
     height: 2px;
     margin-left: 20px;
     
+}
+
+.portafolio{
+    display: flex;
+    justify-content: space-between;
+}
+
+.black{
+    flex: 1;   
+}
+
+.enlace{
+    color: var(--black);
+    transition: transform 0.5s ease;
+    opacity: .6;
+    z-index: 2;
+}
+
+.enlace:hover{
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.enlace:hover .tools{
+    background-color: var(--gray);
+
+}
+
+.proyecto{
+    flex:1;
+    border: 2px solid var(--purple);
+    height: 200px;
+    margin-right: 5px;
+}
+
+.proyecto img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* opacity: .6; */
+}
+
+.tools{
+    flex:1;
+    border: 2px solid var(--purple);
+    margin-right: 5px;
+    color: white;
+    text-align: justify;
+    font-weight: bold;
 }
 
 /* ************* GENERAL ************* */

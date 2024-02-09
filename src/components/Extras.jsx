@@ -1,5 +1,10 @@
 import React from "react";
 import Line from './../images/Line 7 (Stroke).png'
+import Huella from './../images/extras/patas.png'
+import Plantas from './../images/extras/hoja-de-la-planta.png'
+import Amor from './../images/extras/amar.png'
+import Ave from './../images/extras/strelitzia.png' 
+import Ori from './../images/extras/bailarin.png'
 import Style from './../styles/extras.module.css'
 
 export default function Extras () {
@@ -12,6 +17,11 @@ export default function Extras () {
             </div>
 
             <div>
+                <img className={Style.huella} src={Huella}></img>
+                {/* <img className={Style.plantas} src={Plantas}></img> */}
+                <img className={Style.amor} src={Amor}></img>
+                <img className={Style.ave} src={Ave}></img>
+                <img className={Style.ori} src={Ori}></img>
                 <p>
                     Permíteme contarte un poco más sobre mí fuera del ámbito profesional. Soy una apasionada del aprendizaje y siempre estoy buscando nuevas experiencias que amplíen mis horizontes. Aunque no soy una dibujante ni pintora profesional, encuentro gran satisfacción en pintar objetos de madera y sumergirme en manualidades creativas en mi tiempo libre.
                 </p>

@@ -17,8 +17,8 @@ function App() {
         <Introduccion/>
         <SobreMi/>
         <Tecnologias/>
-        <Proyectos/>
         <Habilidades/>
+        <Proyectos/>
         <Extras/>
         <Contacto/>
       </div>

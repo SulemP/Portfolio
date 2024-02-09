@@ -25,6 +25,7 @@ export default function Introduccion() {
 
       <div className={Style.introduccionColumna}>
         <center>
+            <p className={Style.platzi}>Foto tomada por Platzi <br></br>en sus oficinas</p>
             <img className={Style.logoIntro} src={Logo}></img>
             <img className={Style.imgSulem} src={Sulem}></img>
             <img className={Style.dotsIntro} src={Dots}></img>

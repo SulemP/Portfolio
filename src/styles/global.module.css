@@ -4,6 +4,10 @@
     --gray: #ABB2BF;
 }
 
+a{
+    text-decoration: none;
+}
+
 .appContainer {
     padding-top: 100px; /* Ajusta el valor según sea necesario para dejar espacio para el menú */
 }

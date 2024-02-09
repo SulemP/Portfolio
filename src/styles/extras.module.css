@@ -3,9 +3,10 @@
 }
 
 .extras{
+    position: relative;
     max-width: 1200px;
     margin: 0 auto;
-    color: var(--gray);
+    color: white;
     text-align: justify;
 }
   
@@ -15,6 +16,62 @@
     margin-left: 20px;
     
 }
+
+.huella{
+    position: absolute;
+    width: 10%;
+    height: 20%;
+    top: 60%;
+    right: 10%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: .6;
+}
+
+.plantas{
+    position: absolute;
+    width: 8%;
+    height: 20%;
+    top: 50%;
+    left: 35%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: .6;
+}
+
+.amor{
+    position: absolute;
+    width: 15%;
+    height: 30%;
+    top: 2rem;
+    right: 30%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: .6;
+}
+
+.ave{
+    position: absolute;
+    width: 5%;
+    height: 20%;
+    top: 20%;
+    left: 10%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: .6;
+}
+
+.ori{
+    position: absolute;
+    width: 8%;
+    height: 22%;
+    top: 40%;
+    left: 35%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: .6;
+}
+
 
 .gracias{
     color: var(--purple);
