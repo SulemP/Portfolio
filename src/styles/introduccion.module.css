@@ -1,5 +1,5 @@
 .introduccion {
-    /* position: relative; */
+    position: relative;
     display: flex;
     padding: 3%;
     margin-top: 1rem;
@@ -25,6 +25,21 @@
     color: var(--gray);
 }
 
+.introduccionSulem {
+    width: 48%; /* Ancho de cada columna (ajústalo según sea necesario) */
+    padding: 20px;
+}
+
+.introduccionSulem h1{
+    color: white;
+}
+
+.introduccionSulem p{
+    /* margin-top: 1rem; */
+    font-size: 1.2rem;
+    color: white;
+}
+
 .platzi{
     position: absolute;
     top:70%;
@@ -42,12 +57,18 @@
     font-size: 1.1rem;
 }
 
+.introduccion button:hover{
+    background-color: var(--purple);
+    color: var(--dark);
+    font-weight: bold;
+}
+
 .logoIntro{
     position: absolute;
     z-index: -1;
     width: 10%;
-    height: 20%;
-    top: 10rem;
+    height: 30%;
+    top: 15%;
     right: 5%;
 }
 
@@ -55,7 +76,7 @@
     margin-top: -10%;
     width: 50%; 
     height: 60%;
-    margin-left: 40%;
+    margin-left: 55%;
     transition: transform 0.5s ease;
 }
 
@@ -66,8 +87,8 @@
 .dotsIntro{
     position: absolute;
     z-index: -1;
-    right: 25%;
-    top: 23rem;
+    right: 20%;
+    top: 65%;
 }
 
 /* GENERAL */
@@ -91,4 +112,152 @@
     content: '#';
     color: var(--purple);
     margin-right: 5px;
+}
+
+/* ************* MEDIA QUERYS ************* */
+
+@media (min-width: 1200px){
+
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .introduccion{
+        margin-top: 0;
+    }
+
+    .introduccionColumna h1{
+        font-size: 1.5rem;
+    }
+
+    .introduccionSulem p{
+        font-size: 1rem;
+    }
+
+    .imgSulem{
+        margin-top: -12%;
+        margin-left: 60%;
+    }
+
+    .dotsIntro{
+        width: 6%;
+    }
+
+    .introduccion button{
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .introduccion{
+        margin-top: 0;
+    }
+
+    .introduccionColumna{
+        width: 60%;
+    }
+
+    .introduccionColumna h1{
+        font-size: 1.5rem;
+    }
+
+    .introduccionSulem p{
+        font-size: 1.2rem;
+    }
+
+    .logoIntro{
+        display: none;
+    }
+
+    .imgSulem{
+        width: 60%; 
+        height: 60%;
+        margin-top: -12%;
+        margin-left: 40%;
+    }
+
+    .dotsIntro{
+        width: 10%;
+        top: 30%;
+    }
+
+    .introduccion button{
+        margin-top: 1rem;
+    }
+}
+
+@media(max-width: 767px) and (min-width: 576px) {
+    .introduccion{
+        margin-top: 0;
+    }
+
+    .introduccionColumna{
+        width: 65%;
+    }
+
+    .introduccionColumna h1{
+        font-size: 1.1rem;
+    }
+
+    .introduccionColumna p{
+        font-size: .8rem;
+    }
+
+    .introduccionSulem{
+        width: 25%;
+    }
+
+    .introduccionSulem p{
+        display: none;
+    }
+
+    .logoIntro{
+        display: none;
+    }
+
+    .imgSulem{
+        width: 130%; 
+        height: 100%;
+        margin-top: -12%;
+        margin-left: 40%;
+    }
+
+    .dotsIntro{
+        width: 10%;
+        top: 30%;
+    }
+
+    .introduccion button{
+        margin-top: 1rem;
+        height: 40px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .introduccion{
+        margin-top: 0;
+    }
+
+    .introduccionColumna{
+        width: 100%;
+        text-align: center;
+    }
+
+    .introduccionColumna h1{
+        font-size: 1.6rem;
+    }
+
+    .introduccionColumna p{
+        font-size: 1rem;
+    }
+
+    .introduccionSulem{
+        display: none;
+    }
+
+    .introduccion button{
+        margin-top: 1rem;
+        height: 40px;
+        font-size: 1rem;
+    }
 }

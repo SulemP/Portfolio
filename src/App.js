@@ -1,4 +1,5 @@
 // import './App.css';
+import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Style from './styles/global.module.css';
 import Menu from './components/Menu';
 import Introduccion from './components/Introduccion';
@@ -15,12 +16,12 @@ function App() {
       <div className={Style.appContainer}>
         <Menu/>
         <Introduccion/>
-        <SobreMi/>
+        {/* <SobreMi/>
         <Tecnologias/>
         <Habilidades/>
         <Proyectos/>
         <Extras/>
-        <Contacto/>
+        <Contacto/>*/}
       </div>
     </>
   );

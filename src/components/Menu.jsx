@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Style from "./../styles/menu.module.css";
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 
 export default function Menu() {
   const [scrolled, setScrolled] = useState(false);
@@ -33,7 +34,12 @@ export default function Menu() {
         <p className={`${Style.sulem} ${scrolled ? Style.dark : ""}`}>Sulem</p>
 
         <nav className={Style.menuList}>
+{/* <div>
+<MenuOpenIcon />
 
+
+</div> */}
+        
           <ul className={`${Style.color} ${scrolled ? Style.dark : ""}`}>
             <button onClick={() => scrollToSection("inicio")}>Inicio</button>
             <button onClick={() => scrollToSection("acerca-de")}>Acerca de mí</button>
@@ -43,7 +49,6 @@ export default function Menu() {
             <button onClick={() => scrollToSection("extras")}>Extras</button>
             <button onClick={() => scrollToSection("contacto")}>Contácto</button>
           </ul>
-
 
         </nav>
         

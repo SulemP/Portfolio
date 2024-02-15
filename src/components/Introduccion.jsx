@@ -9,7 +9,7 @@ export default function Introduccion() {
   const desarrollo = "desarrollo front-end";
 
   return (
-    <div id="inicio" className={Style.introduccion}>
+    <div id="inicio" className={`${Style.introduccion}`}>
       <div className={Style.introduccionColumna}>
         <h1>
           Soy <span className={Style.highlightText}>{sulemText}</span> y me
@@ -23,7 +23,7 @@ export default function Introduccion() {
         </a>
       </div>
 
-      <div className={Style.introduccionColumna}>
+      <div className={Style.introduccionSulem}>
         <center>
             <p className={Style.platzi}>Foto tomada por Platzi <br></br>en sus oficinas</p>
             <img className={Style.logoIntro} src={Logo}></img>
