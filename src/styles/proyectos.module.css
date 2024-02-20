@@ -1,5 +1,7 @@
 .proyectos{
-    max-width: 1200px;
+    position: relative;
+    padding: 3%;
+    /* max-width: 1200px; */
     margin: 0 auto;
     margin-bottom: 2rem;
 }
@@ -74,4 +76,37 @@
     content: '#';
     color: var(--purple);
     margin-right: 5px;
+}
+
+
+/* ************* MEDIA QUERYS ************* */
+
+@media (min-width: 1200px){
+    .mas{
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .mas{
+        display: none;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .mas{
+        display: none;
+    }
+}
+
+@media(max-width: 767px) and (min-width: 576px) {
+    .informacion{
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .informacion{
+        display: none;
+    }
 }

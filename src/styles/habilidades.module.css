@@ -1,6 +1,7 @@
 .habilidades{
     position: relative;
-    max-width: 1200px;
+    padding: 3%;
+    /* max-width: 1200px; */
     margin: 0 auto;
     height: 500px;
     display: grid;
@@ -43,7 +44,7 @@
 .habilidadesList{
     color: white;
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 
 .habilidadesList div{
@@ -66,4 +67,66 @@
     content: '#';
     color: var(--purple);
     margin-right: 5px;
+}
+
+
+/* ************* MEDIA QUERYS ************* */
+
+@media (min-width: 1200px){
+
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .habilidadesList{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 767px) and (min-width: 576px) {
+    .logo{
+        top: 15rem;
+        right: 30%;
+        height: 20%;
+    }
+
+    .habilidadesList{
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .dots{
+        width: 10%;
+    }
+
+    .logo{
+        top: 15rem;
+        right: 20%;
+        width: 12%;
+        height: 15%;
+    }
+
+    .rectangle{
+        top: 20rem;
+        left: 32%;
+        width: 5%;
+    }
+
+    .dots2{
+        top: 25rem;
+        right: 27%;
+        width: 7%;
+    }
+
+    .habilidadesList div{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0rem!important;
+        text-align: center;
+        font-size: 1.3rem;
+    }
 }

@@ -1,8 +1,8 @@
 .tecnologias{
     position: relative;
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 5rem;
+    /* margin: 0 auto; */
+    /* margin-top: 3rem; */
+    padding: 3%;
 }
 
 .tecnologiasColumns {
@@ -50,7 +50,7 @@
     position: absolute;
     width: 5%;
     height: 12%;
-    right: 15%;
+    right: 18%;
     top: 82%;
 }
 
@@ -67,7 +67,7 @@
     width: 8%;
     height: 20%;
     left: 25%;
-    top: 15%;
+    top: 18%;
 }
 
 .dots2{
@@ -131,4 +131,202 @@
     width: 20%;
     height: 2px;
     margin-left: 20px;   
+}
+
+/* ************* MEDIA QUERYS ************* */
+
+@media (min-width: 1200px){
+    .list{
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .list{
+        display: none;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .list{
+        display: none;
+    }
+
+    .columnLeft {
+        flex: 0;
+    }
+
+    .cssImg{
+        height: 12%;
+        object-fit: cover;
+    }
+    
+    .git{
+        display: none;
+    }
+
+    .branch{
+        display: none;
+    }
+    
+    .JS{
+        width: 5%;
+        height: 12%;
+        left: 20%;
+        top: 40%;
+        object-fit: cover;
+    }
+
+    .code{
+        display: none;
+    }
+
+    .react{
+        width: 15%;
+        height: 30%;
+        left: 30%;
+        top: 55%;
+    }
+
+    .dots{
+        width: 6%;
+        height: 15%;
+        left: 10%;
+        top: 65%;
+    }
+
+    .dots2{
+        width: 5%;
+        height: 10%;
+        left: 88%;
+        top: 50%;
+    }
+}
+
+@media(max-width: 767px) and (min-width: 576px) {
+    .list{
+        display: none;
+    }
+
+    .columnLeft {
+        flex: 0;
+    }
+
+    .cssImg{
+        height: 12%;
+    }
+    
+    .git{
+        display: none;
+    }
+
+    .branch{
+        display: none;
+    }
+    
+    .JS{
+        width: 5%;
+        height: 12%;
+        left: 20%;
+        top: 40%;
+    }
+
+    .code{
+        display: none;
+    }
+
+    .react{
+        width: 15%;
+        height: 30%;
+        left: 30%;
+        top: 55%;
+    }
+
+    .dots{
+        width: 6%;
+        height: 15%;
+        left: 10%;
+        top: 65%;
+    }
+
+    .dots2{
+        width: 5%;
+        height: 10%;
+        left: 88%;
+        top: 50%;
+    }
+}
+
+@media (max-width: 575px) {
+    .columnRight{
+        display: none;
+    }
+    
+    .columnLeft {
+        flex: 0;
+    }
+
+    .cssImg{
+        display: none;
+    }
+    
+    .git{
+        width: 12%;
+        height: 22%;
+        top: 50%;
+        right: 18%;
+    }
+
+    .branch{
+        display: none;
+    }
+    
+    .JS{
+        display: none;
+    }
+
+    .code{
+        display: none;
+    }
+
+    .react{
+        width: 10%;
+        height: 15%;
+        left: 38%;
+        top: 25%;
+    }
+
+    .dots{
+        width: 8%;
+        height: 12%;
+        left: 35%;
+        top: 75%;
+    }
+
+    .dots2{
+        width: 7%;
+        height: 10%;
+        left: 80%;
+        top: 30%;
+    }
+
+    .list{
+        flex: 1;
+        display: flex;
+        color: white;
+        z-index: 2;
+    }
+
+    .list div{
+        flex: 1;
+    }
+
+    ul{
+        list-style-type: none;
+        color: var(--gray);
+    }
+
+    .subtitulo img {
+        width: 50%; 
+    }
 }

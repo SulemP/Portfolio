@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Line from './../images/Line 7 (Stroke).png'
 import Style from './../styles/proyectos.module.css'
 import Black from './../images/proyectos/black.jpg'
@@ -6,6 +6,23 @@ import Dessert from './../images/proyectos/desert.jpg'
 import EUM from './../images/proyectos/eum.jpg'
 
 export default function Proyectos () {
+
+    const [wp, setWP] = useState(false)
+    const [react, setReact] = useState(false)
+    const [html, setHtml] = useState(false)
+
+    const showWp = () => {
+        setWP(!wp)
+    }
+
+    const showReact = () => {
+        setReact(!react)
+    }
+
+    const showHtml = () => {
+        setHtml(!html)
+    }
+
     return (
         <>
             <div id="proyectos-anchor" className={Style.proyectosAnchor}></div>
@@ -29,10 +46,10 @@ export default function Proyectos () {
                                 </div>
 
                                 <div className={Style.tools} style={{textAlign:'center'}}>
-                                    <p>WordPress</p>
+                                    <p style={{marginBottom: '0rem' }}>WordPress</p>
                                 </div>
                                 
-                                <div className={Style.tools} style={{padding:'2px 10px 2px 10px'}}>
+                                <div className={wp ? Style.tools : `${Style.tools} ${Style.informacion}`} style={{padding:'2px 10px 2px 10px'}}>
                                     <p>
                                         Mi primer proyecto vendido, esta página web fue creada utilizando WordPress, siendo una experiencia de aprendizaje en el uso de esta plataforma. 
                                         <br></br><br></br>
@@ -41,6 +58,15 @@ export default function Proyectos () {
                                 </div>
                             </a> 
 
+                            {
+                                (wp || window.innerWidth <= 767) && ( // Si wp es true o si el ancho de la ventana es mayor o igual a 576px
+                                    <div className={Style.mas}>
+                                        <button onClick={showWp}>
+                                            {wp ? 'Ver Menos' : 'Ver Más'}
+                                        </button>
+                                    </div>
+                                )
+                            }
                         </div>
                     </div>
 
@@ -55,10 +81,10 @@ export default function Proyectos () {
                                 </div>
 
                                 <div className={Style.tools} style={{textAlign:'center'}}>
-                                    <p>React Js</p>
+                                    <p style={{marginBottom: '0rem' }}>React Js</p>
                                 </div>
 
-                                <div className={Style.tools} style={{padding:'2px 10px 2px 10px'}}>
+                                <div className={react ? Style.tools : `${Style.tools} ${Style.informacion}`} style={{padding:'2px 10px 2px 10px'}}>
                                     <p>
                                         Una aplicación construida con React.js que ofrece funcionalidades completas de un gestor de tareas (ToDo List), con énfasis en la capacidad de realizar operaciones CRUD (Crear, Leer, Actualizar y Borrar).  
                                         <br></br><br></br>
@@ -67,6 +93,17 @@ export default function Proyectos () {
                                 </div>
 
                             </a>
+
+                            {
+                                (react || window.innerWidth <= 767) && ( // Si wp es true o si el ancho de la ventana es mayor o igual a 576px
+                                    <div className={Style.mas}>
+                                        <button onClick={showReact}>
+                                            {react ? 'Ver Menos' : 'Ver Más'}
+                                        </button>
+                                    </div>
+                                )
+                            }
+
                         </div>
                     </div>
 
@@ -81,16 +118,27 @@ export default function Proyectos () {
                                 </div>
 
                                 <div className={Style.tools} style={{textAlign:'center'}}>
-                                    <p>HTML, SASS, JS</p>
+                                    <p style={{marginBottom: '0rem' }}>HTML, SASS, JS</p>
                                 </div>
 
-                                <div className={Style.tools} style={{padding:'2px 10px 2px 10px'}}>
+                                <div className={html ? Style.tools : `${Style.tools} ${Style.informacion}`} style={{padding:'2px 10px 2px 10px'}}>
                                     <p>
                                         Este proyecto destaca por su enfoque en la estética y la experiencia del usuario, combinando la simplicidad de HTML con la potencia de SASS para lograr un diseño moderno y agradable. 
                                     </p>
                                 </div>
 
                             </a>
+
+                            {
+                                (html || window.innerWidth <= 767) && ( // Si wp es true o si el ancho de la ventana es mayor o igual a 576px
+                                    <div className={Style.mas}>
+                                        <button onClick={showHtml}>
+                                            {html ? 'Ver Menos' : 'Ver Más'}
+                                        </button>
+                                    </div>
+                                )
+                            }
+
                         </div>
                     </div>
 

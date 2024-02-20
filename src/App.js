@@ -16,12 +16,12 @@ function App() {
       <div className={Style.appContainer}>
         <Menu/>
         <Introduccion/>
-        {/* <SobreMi/>
+        <SobreMi/>
         <Tecnologias/>
         <Habilidades/>
         <Proyectos/>
-        <Extras/>
-        <Contacto/>*/}
+        {/* <Extras/> */}
+        {/* <Contacto/> */}
       </div>
     </>
   );

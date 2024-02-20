@@ -1,6 +1,5 @@
 import React from "react";
 import Style from './../styles/tecnologias.module.css'
-// import './../styles/tecnologias.css'
 import Line from './../images/Line 7 (Stroke).png'
 import CSS from './../images/tecnologias/archivo-css.png'
 import Branch from './../images/tecnologias/git.png'
@@ -9,8 +8,6 @@ import GitHub from './../images/tecnologias/github.png'
 import Code from './../images/tecnologias/code.png'
 import ReactLogo from './../images/tecnologias/react.png'
 import Dots from './../images/Dots.png'
-
-import SobreMi from "./SobreMi";
 
 export default function Tecnologias () {
     return (
@@ -25,6 +22,7 @@ export default function Tecnologias () {
                 <div className={Style.tecnologiasColumns}>
 
                     <div className={Style.columnLeft}>
+
                         <img className={Style.cssImg} src={CSS}></img>
                         <img className={Style.git}src={GitHub}></img>
                         <img className={Style.branch} src={Branch}></img>
@@ -109,6 +107,41 @@ export default function Tecnologias () {
                             </table>
                         </div>
 
+                    </div>
+
+                    <div className={Style.list}>
+
+                        <div>
+                            <ul style={{paddingLeft:'1rem'}}>
+                                <li style={{color: 'white',fontWeight: 'bold', fontSize:'1.2rem'}}>Lenguajes</li>
+                                <li>Java Script</li>
+                                <li>PHP</li>
+
+                                <li style={{color: 'white',fontWeight: 'bold', fontSize:'1.2rem', marginTop: '1rem'}}>Herramientas</li>
+                                <li>Figma</li>
+                                <li>Visual Studio Code</li>
+                                <li>Git</li>
+                                <li>Notion</li>
+                                <li>Bootstrap</li>
+                                <li>Material UI</li>
+                                <li>Jira</li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <ul style={{paddingLeft:'1rem'}}>
+                                <li style={{color: 'white',fontWeight: 'bold', fontSize:'1.2rem'}}>FrameWork</li>
+                                <li>React Js</li>
+
+                                <li style={{color: 'white',fontWeight: 'bold', fontSize:'1.2rem', marginTop: '2.5rem'}}>Otros</li>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>SASS</li>
+                                <li>Redux</li>
+                                <li>MySQL</li>
+                            </ul>
+                        </div>
+                        
                     </div>
 
                 </div>
