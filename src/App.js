@@ -20,8 +20,8 @@ function App() {
         <Tecnologias/>
         <Habilidades/>
         <Proyectos/>
-        {/* <Extras/> */}
-        {/* <Contacto/> */}
+        <Extras/>
+        <Contacto/>
       </div>
     </>
   );

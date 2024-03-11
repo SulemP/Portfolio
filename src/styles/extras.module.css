@@ -4,6 +4,7 @@
 
 .extras{
     position: relative;
+    padding: 3%;
     max-width: 1200px;
     margin: 0 auto;
     color: white;
@@ -20,7 +21,7 @@
 .huella{
     position: absolute;
     width: 10%;
-    height: 20%;
+    height: 25%;
     top: 60%;
     right: 10%;
     object-fit: cover;
@@ -94,4 +95,90 @@
     content: '#';
     color: var(--purple);
     margin-right: 5px;
+}
+
+/* ************* MEDIA QUERYS ************* */
+
+@media (min-width: 1200px){
+
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .huella{
+        width: 12%;
+    }
+
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .huella{
+        width: 18%;
+    }
+
+    .amor{
+        width: 18%;
+    }
+
+    .ave{
+        width: 12%;
+    }
+
+    .ori{
+        width: 12%;
+    }
+}
+
+@media(max-width: 767px) and (min-width: 576px) {
+    .huella{
+        width: 6rem;
+        height: 5rem;
+        top: 63%;
+    }
+
+    .amor{
+        width: 7rem;
+        height: 6rem;
+        top: 3%;
+    }
+
+    .ave{
+        width: 7rem;
+        height: 6rem;
+        top: 20%;
+    }
+
+    .ori{
+        width: 6rem;
+        height: 5rem;
+        top: 50%;
+        left: 25%;
+    }
+}
+
+@media (max-width: 575px) {
+    .huella{
+        width: 6rem;
+        height: 5rem;
+        top: 63%;
+    }
+
+    .amor{
+        width: 7rem;
+        height: 6rem;
+        top: 3%;
+        right: 15%;
+    }
+
+    .ave{
+        width: 7rem;
+        height: 6rem;
+        top: 20%;
+    }
+
+    .ori{
+        width: 6rem;
+        height: 6rem;
+        top: 50%;
+        left: 25%;
+    }
 }

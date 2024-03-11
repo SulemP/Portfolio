@@ -1,10 +1,10 @@
 import React from "react";
 import Line from './../images/Line 7 (Stroke).png'
 import Style from './../styles/contacto.module.css'
-import IN from './../images/logotipo-de-linkedin.png'
-import Git from './../images/tecnologias/github.png'
-import Email from './../images/email.png'
-import WA from './../images/whatsapp.png'
+import IN from './../images/tecnologias/linkedinBlanco.png'
+import Git from './../images/tecnologias/gitBlanco.png'
+import Email from './../images/emailBlanco.png'
+import WA from './../images/waBlanco.png'
 
 export default function Contacto () {
 
@@ -27,6 +27,12 @@ export default function Contacto () {
                 <div className={Style.columns}>
                     <div className={Style.left}>
                         <div className={Style.rectangulo}>
+                            
+                            <div class={Style.linea}></div>
+                            <div class={Style.linea}></div>
+                            <div class={Style.linea}></div>
+                            <div class={Style.linea}></div>
+
                             <p>
                                 Estoy entusiasmada por expandir mis conocimientos y crecer profesionalmente en el campo del desarrollo web. 
                                 <br></br><br></br>
@@ -74,6 +80,43 @@ export default function Contacto () {
                     </div>
 
                 </div>
+            </div>
+
+            <div className={Style.footer}>
+
+                <div className={Style.footRedes}>
+
+                    <a href="https://www.linkedin.com/in/sulem-pastrana-343839217/" target="_blank">
+                        <div>
+                            <img src={IN}></img>
+                            <p>LinkedIn</p>
+                        </div> 
+                    </a>
+
+                    <a href="https://github.com/SulemP" target="_blank">
+                        <div>
+                            <img src={Git}></img>
+                            <p>GitHub</p>
+                        </div>
+                    </a>
+                    
+
+                    <div onClick={handleClick}>
+                        <a href="#">
+                            <img src={Email} alt="Correo"></img>
+                            <p>Email</p>
+                        </a>
+                    </div>
+
+                    <a href="https://wa.me/525548971683?text=¡Hola%2C%20Sulem!%20¿Cómo%20estás%3F" target="_blank">
+                        <div>
+                            <img src={WA} alt="WhatsApp"></img>
+                            <p>WhatsApp</p>
+                        </div>
+                    </a>
+
+                </div>
+
             </div>
         </>
     )

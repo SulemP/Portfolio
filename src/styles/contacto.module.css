@@ -2,6 +2,7 @@
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 2rem;
+    padding: 3%;
 }
 
 .columns{
@@ -15,13 +16,23 @@
     justify-content: space-evenly;
 }
 
-.rectangulo{
-    width: 60%;
+.rectangulo {
+    width: 60%; 
     padding: 5%;
     text-align: justify;
     color: white;
-    border: 1px solid var(--purple);
+    position: relative; 
 }
+
+.linea {
+    position: absolute; 
+}
+
+/* Posicionamiento de cada línea */
+.linea:nth-child(1) {border: 1px solid var(--purple); top: 0; left: 0%; width: 90%;}
+.linea:nth-child(2) {border: 1px solid var(--purple); right: 0; top: 0%; height: 80%; }
+.linea:nth-child(3) {border: 1px solid var(--purple); bottom: 0; right: 0%; width: 90%; }
+.linea:nth-child(4) {border: 1px solid var(--purple); left: 0; bottom: 0%; height: 80%; }
 
 .right{
     flex: 1;
@@ -91,4 +102,116 @@
     width: 20%;
     height: 2px;
     margin-left: 20px;   
+}
+
+/* ************* MEDIA QUERYS ************* */
+
+@media (min-width: 1200px){
+    .footer{
+        display: none;
+    }
+}
+
+@media (max-width: 1199px) and (min-width: 992px) {
+    .footer{
+        display: none;
+    }
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+    .footer{
+        display: none;
+    }
+
+    .rectangulo{
+        width: 70%;
+    }
+
+    .right {
+        flex-direction: column; 
+    }
+
+    .redes {
+        flex-direction: column; 
+    }
+}
+
+@media(max-width: 767px) and (min-width: 576px) {
+    .footer{
+        display: none;
+    }
+
+    .rectangulo{
+        width: 70%;
+    }
+
+    .right {
+        flex-direction: column; 
+    }
+
+    .redes {
+        flex-direction: column; 
+    }
+}
+
+@media (max-width: 575px) {
+    .columns{
+        flex-direction: column;
+    }
+
+    .rectangulo{
+        width: 90%;
+    }
+
+    .redes{
+        display: none;
+    }
+
+    .footer {
+        display: flex; 
+        background-color: var(--purple);
+        height: 7rem;
+        align-items: center;
+    }
+
+    .footRedes{
+        display: flex;
+        flex: 1;
+    }
+    
+    .footRedes div{
+        flex: 1;
+        text-align: center;
+    }
+    
+    .footRedes img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .footRedes div img {
+        opacity: 0.3; 
+    }
+    
+    .footRedes div:hover img {
+        opacity: 1; 
+    }
+    
+    .footRedes a{
+        flex: 1;
+        text-align: center;
+        color: white;
+    }
+    
+    .footRedes a:active {
+        color: inherit; /* Mantiene el color heredado cuando el enlace está activo */
+    }
+    
+    .footRedes a img {
+        opacity: 0.7; 
+    }
+    
+    .footRedes a:hover img {
+        opacity: 1; 
+    }
 }
