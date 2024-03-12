@@ -1,10 +1,14 @@
 import React from "react";
 import Line from './../images/Line 7 (Stroke).png'
 import Style from './../styles/contacto.module.css'
-import IN from './../images/tecnologias/linkedinBlanco.png'
-import Git from './../images/tecnologias/gitBlanco.png'
-import Email from './../images/emailBlanco.png'
-import WA from './../images/waBlanco.png'
+import IN from './../images/logotipo-de-linkedin.png'
+import INB from './../images/tecnologias/linkedinBlanco.png'
+import Git from './../images/tecnologias/github.png'
+import GitB from './../images/tecnologias/gitBlanco.png'
+import Email from './../images/email.png'
+import EmailB from './../images/emailBlanco.png'
+import WA from './../images/whatsapp.png'
+import WAB from './../images/waBlanco.png'
 
 export default function Contacto () {
 
@@ -88,14 +92,14 @@ export default function Contacto () {
 
                     <a href="https://www.linkedin.com/in/sulem-pastrana-343839217/" target="_blank">
                         <div>
-                            <img src={IN}></img>
+                            <img src={INB}></img>
                             <p>LinkedIn</p>
                         </div> 
                     </a>
 
                     <a href="https://github.com/SulemP" target="_blank">
                         <div>
-                            <img src={Git}></img>
+                            <img src={GitB}></img>
                             <p>GitHub</p>
                         </div>
                     </a>
@@ -103,14 +107,14 @@ export default function Contacto () {
 
                     <div onClick={handleClick}>
                         <a href="#">
-                            <img src={Email} alt="Correo"></img>
+                            <img src={EmailB} alt="Correo"></img>
                             <p>Email</p>
                         </a>
                     </div>
 
                     <a href="https://wa.me/525548971683?text=¡Hola%2C%20Sulem!%20¿Cómo%20estás%3F" target="_blank">
                         <div>
-                            <img src={WA} alt="WhatsApp"></img>
+                            <img src={WAB} alt="WhatsApp"></img>
                             <p>WhatsApp</p>
                         </div>
                     </a>

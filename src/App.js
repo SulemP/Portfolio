@@ -1,7 +1,7 @@
 // import './App.css';
 import './../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import Style from './styles/global.module.css';
-import Menu from './components/Menu';
+import MenuComponent from './components/MenuComponent';
 import Introduccion from './components/Introduccion';
 import SobreMi from './components/SobreMi';
 import Proyectos from './components/Proyectos';
@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <div className={Style.appContainer}>
-        <Menu/>
+        <MenuComponent/>
         <Introduccion/>
         <SobreMi/>
         <Tecnologias/>
